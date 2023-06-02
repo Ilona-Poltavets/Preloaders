@@ -10,7 +10,8 @@
     z-index: 99999;
     background-color: aquamarine;
 
-    .preloader-logo {
+    .preloader-logo,
+    .preloader-logo2 {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -24,36 +25,31 @@
 
 //Spinner-around-logo
 
-// .preloader-logo {
-//     width: 100px;
-//     height: 100px;
-// }
+.spinner {
+    border: 5px solid transparent;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 1s ease-in-out infinite;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
-// .spinner {
-//     border: 5px solid transparent;
-//     border-top: 5px solid black;
-//     border-bottom: 5px solid black;
-//     border-radius: 50%;
-//     width: 150px;
-//     height: 150px;
-//     animation: spin 1s ease-in-out infinite;
-//     position: fixed;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     margin: auto;
-// }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
 
-// @keyframes spin {
-//     0% {
-//         transform: rotate(0deg);
-//     }
-
-//     100% {
-//         transform: rotate(360deg);
-//     }
-// }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 // Spinner-logo
 
